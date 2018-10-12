@@ -97,20 +97,201 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*°°°°°°°°°°°°°°°°°°°°°°°° Utility °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+   *{
+     margin: 0;
+     padding: 0;
+   }
+   body{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+   }
+ /* ///////////////////////// nav /////////////////////// */
+   nav{
+     display: flex;
+     justify-content: center;
+     justify-content: space-between;
+     background-color: lightgrey;
+     width: 100%;
+   }
+   .nav-flex{
+     display: flex;
+   }
+   #login{
+     display: none;
+   }
+   /* ///////////////////////// Header /////////////////////// */
+   header{
+     display: flex;
+     flex-direction: column;
+     background-color: lightblue;
+     width: 100%;
+   }
+   .link-flex{
+     display: flex;
+     justify-content: flex-start;
+     background-color: hotpink;
+   }
+   .link-flex li{
+     list-style: none;
+
+   }
+
+   .head-title-column{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     background-color: red;
+     text-align: center;
+   }
+
+   /* /////////////////////////End Header /////////////////////// */
+   /* ///////////////////////// Main /////////////////////// */
+   main{
+     width: 90%;
+     background-color: pink;
+     display: flex;
+     flex-direction: column;
+     align-self: center;
+   }
+
+   /* main section first bloc  */
+.main-firstbloc-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellowgreen;
+  width: 100%;
+}
+.main-firstbloc-calltoaction{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.calltoaction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-firstbloc-textimage{
+  background-color: grey;
+  width: 100%;
+}
+
+      /* main section second bloc  */
+.main-secondbloc-column{
+  text-align: center;
+}
+
+.main-secondbloc-article-icones{
+  display: flex;
+  justify-content: flex-end;
+}
+.main-secondbloc-article-flex{
+  display: flex;
+  justify-content: space-between;
+}
+article{
+  width: 30%;
+}
+   /* ///////////////////////// End Main /////////////////////// */
+    /* ///////////////////////// Footer /////////////////////// */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.footer-lien-flex{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+     /* ///////////////////////// End Footer /////////////////////// */
+   /*°°°°°°°°°°°°°°°°°°°°°°°° End Utility °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+   /* °°°°°°°°°°°°°°°°°°°°°°°°Common Rules°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
+   img{
+     width: 100%;
+   }
+   /*°°°°°°°°°°°°°°°°°°°°°°°° End Common Rules °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
 
 
+/*//////////////////// Tablette  */
+@media only screen and (max-width: 1200px) {
+    body{
+        background-color: yellowgreen;
+        width: 100%;
+    }
+    #login{
+      display: none;
+    }
+    /* section first bloc of the main */
+    .main-firstbloc-calltoaction{
+      display: none;
+    }
+    /* Section second bloc of the main  */
+    .main-secondbloc-article-flex{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-around;
+    }
 
+    article{
+      width: 40%;
+    }
+    /*/////////////////////////////////////////// footer */
+    .footer-lien-flex{
+      display: none;
+    }
+}
 
+/*//////////////////// Mobile  */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: lightblue;
+        width: 100%;
+    }
+    #login{
+      display: flex;
+    }
+    .nav-flex{
+      display: none;
+    }
+    /* link of header hidden */
+    .link-flex{
+      display: none;
+    }
+    .boulangeriheader{
+      display: none;
+    }
+    /* End link of header hidden */
+            /* section first bloc of the main */
+.main-firstbloc-calltoaction{
+  display: none;
+}
+            /* End section first bloc of the main */
 
-
-
-
-
-
-
-
-
-
+            /* Section second bloc of the main  */
+article{
+  width: 100%;
+}
+    .main-secondbloc-article-flex{
+      display: flex;
+      flex-direction: column;
+  }
+            /*/////////////////////////////////////////// footer */
+.footer-lien-flex{
+  display: none;
+}
+            /*/////////////////////////////////////////// End footer */
+}
 
 
 /* ==========================================================================
