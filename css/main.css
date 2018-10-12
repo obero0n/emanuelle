@@ -113,8 +113,11 @@ textarea {
      display: flex;
      justify-content: center;
      justify-content: space-between;
-     background-color: lightgrey;
+     background-color: rgba(255, 255, 255, 0.8);
+     height: 10vh;
      width: 100%;
+     position: fixed;
+     top: 0;
    }
    .nav-flex{
      display: flex;
@@ -122,20 +125,28 @@ textarea {
    #login{
      display: none;
    }
+   #dropdown{
+     display: none;
+   }
    /* ///////////////////////// Header /////////////////////// */
    header{
      display: flex;
      flex-direction: column;
-     background-color: lightblue;
      width: 100%;
+     margin-top: 10vh;
    }
    .link-flex{
      display: flex;
      justify-content: flex-start;
-     background-color: hotpink;
+     align-items: center;
+     height: 10vh;
+     border-bottom: 1px solid Black;
+
    }
    .link-flex li{
      list-style: none;
+     margin-left: 5%;
+
 
    }
 
@@ -144,7 +155,6 @@ textarea {
      flex-direction: column;
      align-items: center;
      width: 100%;
-     background-color: red;
      text-align: center;
    }
 
@@ -219,6 +229,30 @@ footer{
    img{
      width: 100%;
    }
+   h1{
+     font-family: 'Parisienne', cursive;
+     color: #CFA290;
+     font-size: 3em;
+   }
+   h2, h3, h4{
+     font-family: 'Quicksand', sans-serif;
+   }
+   p, a{
+     font-family: 'Source Sans Pro', sans-serif;
+   }
+   a{
+     text-decoration: none;
+   }
+   .link-flex a{
+     color: #CFA290;
+   }
+   #logohead{
+     width: 30%;
+   }
+   #logo{
+     width: 9%;
+     margin-left: 3%;
+   }
    /*°°°°°°°°°°°°°°°°°°°°°°°° End Common Rules °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
 
 
@@ -229,6 +263,9 @@ footer{
         width: 100%;
     }
     #login{
+      display: none;
+    }
+    #dropdown{
       display: none;
     }
     /* section first bloc of the main */
@@ -255,10 +292,12 @@ footer{
 /*//////////////////// Mobile  */
 @media only screen and (max-width: 600px) {
     body{
-        background-color: lightblue;
         width: 100%;
     }
     #login{
+      display: flex;
+    }
+    #dropdown{
       display: flex;
     }
     .nav-flex{
