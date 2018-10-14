@@ -96,301 +96,186 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-   /*°°°°°°°°°°°°°°°°°°°°°°°° Utility °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
-
-   *{
-     margin: 0;
-     padding: 0;
-   }
-   body{
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-   }
-   nav{
-     display: flex;
-     background-color: rgba(255, 255, 255, 0.8);
-     height: 15vh;
-     position: fixed;
-     top: 0;
-   }
-
-  #login{
-    display: flex;
-   }
-          #dropdown{
-            display: flex;
-          }
-          .nav-flex{
-            display: none;
-          }
-   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~  HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-                      /* header */
-   header{
-     margin-top: 15vh;
-   }
-   .head-title-column{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-
-   }
-                         /* End header */
-          /* link of header hidden */
-          .link-flex{
-            display: none;
-          }
-          .boulangeriheader{
-            display: none;
-          }
-          /* End link of header hidden */
-                  /* section first bloc of the main */
-      .main-firstbloc-calltoaction{
-        display: none;
-      }
-                  /* End section first bloc of the main */
-
-                  /* Section second bloc of the main  */
-
-          .main-secondbloc-article-flex{
-            display: flex;
-            flex-direction: column;
-        }
-                  /*/////////////////////////////////////////// footer */
-      .footer-lien-flex{
-        display: none;
-      }
-                  /*/////////////////////////////////////////// End footer */
-
-   /*°°°°°°°°°°°°°°°°°°°°°°°° End Utility °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
-
-   /* °°°°°°°°°°°°°°°°°°°°°°°°Common Rules°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
-   img{
-     width: 100%;
-   }
-   h1{
-     font-family: 'Parisienne', cursive;
-     color: #CFA290;
-     font-size: 3em;
-   }
-   h2, h3, h4{
-     font-family: 'Quicksand', sans-serif;
-   }
-
-   p, a{
-     font-family: 'Source Sans Pro', sans-serif;
-   }
-   a{
-     text-decoration: none;
-   }
-   .link-flex a{
-     color: #CFA290;
-   }
-   .link-flex a:hover{
-     color: #CFA290;
-     border: 1px solid black;
-     padding: 9%;
-   }
-
-   #logohead{
-     width: 50%;
-   }
-   #logo{
-     width: 25%;
-     margin: 2%;
-   }
-
-   /* main */
-
-   .main-firstbloc-textimage p{
-     font-size: 2em;
-     text-align: center;
-   }
-   /*°°°°°°°°°°°°°°°°°°°°°°°° End Common Rules °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
-
-
-/*//////////////////// Tablette  */
-@media only screen and (min-width: 600px) {
-    body{
-        background-color: yellowgreen;
-        width: 100%;
-    }
-    #login{
-      display: none;
-    }
-    #dropdown{
-      display: none;
-    }
-    /* section first bloc of the main */
-    .main-firstbloc-calltoaction{
-      display: none;
-    }
-    /* Section second bloc of the main  */
-    .main-secondbloc-article-flex{
-      display: flex;
-      flex-direction: row;
-
-      justify-content: space-around;
-      background-color: red;
-    }
-
-    article{
-      width: 40%;
-    }
-    /*/////////////////////////////////////////// footer */
-    .footer-lien-flex{
-      display: none;
-    }
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° Utility °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgba(188,143,143,0.4);
+}
+header, main, footer{
+  width: 90%;
+}
+form{
+  display: none;
+}
+.flex{
+  display: flex;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.align{
+  align-items: center;
+}
+.flex-end{
+  justify-content: flex-end;
 }
 
-/* ///////////////////////////////////////////PC */
-@media only screen and (min-width: 1200px){
-  /* nav */
-  .nav-flex{
-    display: flex;
-  }
-  #login{
-    display: none;
-  }
-  #dropdown{
-    display: none;
-  }
 
-  /* section first bloc of the main */
-  .main-firstbloc-calltoaction{
-    display: block;
-  }
-  .main-firstbloc-calltoaction{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .main-secondbloc-article-flex{
-    display: flex;
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End Utility °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° Common Rules °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+#logo{
+  width: 100%;
+}
+img{
+  width: 100%;
+}
+.none{
+  display: none;
+}
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End Common Rules°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+h1, h2, h4{
+  text-align: center;
+  color: white;
+}
+h1{
+  font-family: 'Parisienne', cursive;
+  font-size: 4em;
+}
+h2, h3, h4{
+  font-family: 'Josefin Slab', serif;
+  font-size: 2em;
+}
+h3, h4{
+  margin-bottom: 1em;
+  border-bottom: 1px solid white;
+}
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  background-color: white;
+}
+span{
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+}
+main section:nth-child(2) article div div a{
+  text-decoration: none;
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  color: white;
+}
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° Mobile first °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/* Nav section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+nav{
+  background-color: rgba(255, 255, 255, 0.8);
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  height: 20vh;
+  width: 100%
+}
+nav aside{
+  width: 20%;
+}
 
-  }
+/* End Nav section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Header section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+header{
+  background-color: rosybrown;
+  margin-top: 20vh;
+}
+header ul li{
+  display: none;
+}
+/* End Header section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Main section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+main{
 
-  article{
-    width: 30%;
-  }
-  /* ///////////////////////// nav /////////////////////// */
-    nav{
-      display: flex;
-      justify-content: center;
-      justify-content: space-between;
-      background-color: rgba(255, 255, 255, 0.8);
-      height: 10vh;
-      width: 100%;
-      position: fixed;
-      top: 0;
-    }
-
-    /* ///////////////////////// Header /////////////////////// */
-    header{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 10vh;
-    }
-    .link-flex{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      height: 10vh;
-      border-bottom: 1px solid Black;
-
-    }
-    .link-flex li{
-      list-style: none;
-      margin-left: 5%;
-
-
-    }
-
-    .head-title-column{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      text-align: center;
-    }
-
-    /* /////////////////////////End Header /////////////////////// */
-    /* ///////////////////////// Main /////////////////////// */
-    main{
-      width: 90%;
-      background-color: pink;
-      display: flex;
-      flex-direction: column;
-      align-self: center;
-    }
-
-    /* main section first bloc  */
- .main-firstbloc-column{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background-color: yellowgreen;
-   width: 100%;
- }
- .main-firstbloc-calltoaction{
-   display: none;
- }
- .calltoaction{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
-
- .main-firstbloc-textimage{
-   background-color: grey;
-   width: 100%;
- }
-
-       /* main section second bloc  */
- .main-secondbloc-column{
-   text-align: center;
-   width: 100%;
- }
-
- .main-secondbloc-article-icones{
-   display: flex;
-   justify-content: flex-end;
- }
- .main-secondbloc-article-flex{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
- }
- article{
-   width: 100%;
- }
-    /* ///////////////////////// End Main /////////////////////// */
-  /* ///////////////////////// Footer /////////////////////// */
+}
+main section:nth-child(2) h3{
+  width: 100%;
+  background-color: white;
+  margin-top: 10%;
+}
+main section:nth-child(2) article div{
+  height: 10vh;
+  background-color: rosybrown;
+}
+main section:nth-child(2) article div div{
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1em;
+}
+/* End Main section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Footer section ~~~~~~~~~~~~~~~~~~~~~~~~*/
 footer{
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
+  background-color: lightgrey;
+  height: 40vh;
 }
-.footer-lien-flex{
-display: flex;
-justify-content: space-between;
-width: 70%;
-}
-   /* ///////////////////////// End Footer /////////////////////// */
+/* End Footer section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End Mobile first °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° tablette °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+@media only screen and (min-width: 600px) {
+  body{
+    background-color: lightblue;
+  }
+/* Nav section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+#menu{
+  display: none;
 }
 
+nav aside:nth-child(2){
+  width: 50%;
+}
+form{
+  display: block;
+  justify-content: space-around;
+  width: 100%;
+}
+/* End Nav section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Header section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+header{
+  background-image: url(../img/cookie.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
+/* End Header section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Main section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+main section:nth-child(2){
+  background-color: crimson;
+}
+main section:nth-child(2) div{
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
 
 
+}
+main section:nth-child(2) article{
+  width: 45%;
+  background-color: yellow;
+
+}
+/* End Main section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+}
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End teblette °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° Pc °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+@media only screen and (min-width: 1200px){
+  body{
+    background-color: lightgrey;
+  }
+  #menu{
+    display: none;
+  }
+}
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End Pc °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */

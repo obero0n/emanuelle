@@ -11,65 +11,53 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100|Parisienne|Quicksand" rel="stylesheet">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="column align">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!--///////////////////////// Navigation bar position fix /////////////////////// -->
-  <nav>
-    <div class="logo">
+  <nav class="flex align">
+    <aside class="column align">
       <img id="logo" src="img/emanuelle_logo.png" alt="">
-      <select id="dropdown" name="dropdown">
-        <optgroup label="groupe1">
-        <option>Alpha</option>
-        <option>Beta</option>
-      </optgroup>
-      <optgroup label="groupe2">
-        <option>Un</option>
-        <option>Deux</option>
-    </optgroup>
-      </select>
-    </div>
-    <aside class="nav-flex">
-      <i> <a href="#">icone login</a> </i>
+      <i id="menu"class="fas fa-bars fa-3x"></i>
+    </aside>
+    <aside class="flex align">
+      <i id="login"class="fas fa-user fa-4x"><a href="#"></a></i>
       <form class="" action="index.html" method="post">
           <input type="text" name="" value="">
-          <input type="submit" name="recherche" value="recherche">
+          <i class="fas fa-search fa-2x"></i>
+          <input type="submit" name="recherche" value="">
       </form>
-
     </aside>
-    <i id="login"> <a href="#">login</a> </i>
   </nav>
   <!--///////////////////////// End Navigation bar position fix /////////////////////// -->
           <!--///////////////////////// Header /////////////////////// -->
-  <header>
-    <ul class="link-flex">
+  <header class="column align">
+    <ul class="flex">
       <li> <a href="#">HISTOIRE</a> </li>
       <li> <a href="#">PRODUITS</a> </li>
       <li> <a href="#">MAGASINS</a> </li>
       <li> <a href="#">ACTUALITÉS</a> </li>
     </ul>
-    <section class="head-title-column">
-      <img id="logohead" src="img/emanuelle_logo.png" alt="">
+    <section class="column align">
       <h1>Emanuelle</h1>
-      <h2>LE SECRET DU PAIN CROUSTILLANT D'EMANUELLE.</h2>
-      <img class="boulangeri boulangeriheader" src="img/coissant.jpg" alt="">
+      <h2>LE SECRET DU PAIN CROUSTILLANT DE EMANUELLE.</h2>
     </section>
   </header>
             <!--/////////////////////////End Header /////////////////////// -->
           <!--///////////////////////// Main /////////////////////// -->
 <main>
                     <!-- section first bloc of the main -->
-  <section class="main-firstbloc-column">
-    <div class="main-firstbloc-calltoaction">
+  <section class="column align">
+    <div class="flex none">
       <div class="calltoaction">
         <a href="#">call to action</a>
         <p>texte</p>
@@ -83,59 +71,65 @@
         <p>texte</p>
       </div>
     </div>
-    <div class="main-firstbloc-textimage">
+    <div class="column align">
       <p>Bienvenue sur notre site pour partager avec vous notre passion pour le pain, les gâteaux et les pâtisseries !</p>
       <img class="boulangeri" src="img/coissant.jpg" alt="">
     </div>
   </section>
                     <!--End section first bloc of the main -->
                     <!--Section second bloc of the main -->
-  <section class="main-secondbloc-column">
-    <h3>NOS PRODUITS</h3>
-    <div class="main-secondbloc-article-flex">
+  <section class="column align">
+    <h3>NOS PRODUITS:</h3>
+    <div class="column">
       <article class="">
         <h4>PAINS</h4>
         <img class="boulangeri" src="img/pain.jpg" alt="">
-        <p>Emanuelle propose un choix complet de 10 variétés de pains.
+        <p><span>Emanuelle</span> propose un choix complet de 10 variétés de pains.
            Pain complet, au levain, à l’abricot, aux noisettes,
             aux figues et aux noix et les fougasses aux olives sont autant de régal pour la vue que pour vos papilles.
            Sans oublier le Pain de 3 et surtout la fameuse «Baguette de tradition»
             qui bénéficie chaque année de nombreux prix d’excellence au sein des différents Chez Emanuelle.</p>
-        <div class="main-secondbloc-article-icones">
-          <a href="#">facebook</a>
-          <a href="#">twitter</a>
-          <a href="#">voir</a>
+        <div class="flex flex-end">
+          <div class="flex">
+            <i class="fab fa-facebook-f fa-2x"> <a href="#"></a> </i>
+            <i class="fab fa-twitter fa-2x"> <a href="#"></a> </i>
+            <a href="#">Voir</a>
+          </div>
         </div>
       </article>
       <article class="">
         <h4>VIENNOISERIES</h4>
         <img class="boulangeri" src="img/viennoiserie.jpg" alt="">
-        <p>Aux traditionnels croissants et pains au chocolat pur beurre confectionnés chaque jour
+        <p><span>Aux</span> traditionnels croissants et pains au chocolat pur beurre confectionnés chaque jour
            à la main dans nos boulangeries viennent s’ajouter nos délicieux cakes ; au citron, au chocolat,
             à la pistache et aux griottes.
           Pour une petite faim, une gourmandise impromptue ou simplement pour le goûter,
            Chez Emanuelle offre une farandole de douceurs sucrées. Venez découvrir nos délicieuses madeleines,
             nos savoureux financiers et que vous pouvez déguster à n’importe quel moment de la journée.</p>
-        <div class="main-secondbloc-article-icones">
-          <a href="#">facebook</a>
-          <a href="#">twitter</a>
-          <a href="#">voir</a>
-        </div>
+            <div class="flex flex-end">
+              <div class="flex">
+                <i class="fab fa-facebook-f fa-2x"> <a href="#"></a> </i>
+                <i class="fab fa-twitter fa-2x"> <a href="#"></a> </i>
+                <a href="#">Voir</a>
+              </div>
+            </div>
       </article>
       <article class="">
         <h4>PÂTISSERIES</h4>
         <img class="boulangeri" src="img/patisserie.jpg" alt="">
-        <p>Chez Emanuelle, même les pâtisseries ont leur collection !
+        <p><span>Chez</span> Emanuelle, même les pâtisseries ont leur collection !
           Quatre fois par an, de nouvelles surprises sont au rendez-vous grâce aux fruits et saveurs des saisons.
           Les traditionnels éclairs délicatement glacés, tartes Tatin, Paris-Brest,
            clafoutis et créations pâtissières rivalisent de beauté.
            Viennent également s’ajouter nos délicieuses tartes fines et autres créations
             de nos talentueux pâtissiers.</p>
-        <div class="main-secondbloc-article-icones">
-          <a href="#">facebook</a>
-          <a href="#">twitter</a>
-          <a href="#">voir</a>
-        </div>
+            <div class="flex flex-end">
+              <div class="flex">
+                <i class="fab fa-facebook-f fa-2x"> <a href="#"></a> </i>
+                <i class="fab fa-twitter fa-2x"> <a href="#"></a> </i>
+                <a href="#">Voir</a>
+              </div>
+            </div>
       </article>
     </div>
   </section>
@@ -143,8 +137,8 @@
 </main>
             <!--/////////////////////////End Main /////////////////////// -->
             <!--///////////////////////// Footer /////////////////////// -->
-<footer>
-  <div class="footer-lien-flex">
+<footer class="column align">
+  <div class="flex none">
     <ul>
       <li> <a href="#">lien</a> </li>
       <li> <a href="#">lien</a> </li>
@@ -162,11 +156,11 @@
     </ul>
   </div>
   <p>Made by Simon</p>
-  <div class="footer-iconefinale-flex">
-    <i> <a href="#">twitter</a> </i>
-    <i> <a href="#">linkd</a> </i>
-    <i> <a href="#">git</a> </i>
-    <i> <a href="#">stack</a> </i>
+  <div class="flex">
+    <i class="fab fa-twitter fa-3x"> <a href="#"></a> </i>
+    <i class="fab fa-linkedin-in fa-3x"> <a href="#"></a> </i>
+    <i class="fab fa-github fa-3x"> <a href="#"></a> </i>
+    <i class="fab fa-stack-overflow fa-3x"> <a href="#"></a> </i>
   </div>
 </footer>
           <!--/////////////////////////End  Footer /////////////////////// -->
