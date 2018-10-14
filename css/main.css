@@ -96,23 +96,255 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° Utility °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgba(188,143,143,0.4);
+}
+header, main, footer{
+  width: 90%;
+}
+form{
+  display: none;
+}
+.flex{
+  display: flex;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.align{
+  align-items: center;
+}
+.flex-end{
+  justify-content: flex-end;
+}
 
 
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End Utility °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° Common Rules °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+#logo{
+  width: 100%;
+}
+img{
+  width: 100%;
+}
+.none{
+  display: none;
+}
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End Common Rules°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+h1, h2, h4{
+  text-align: center;
+  color: white;
+}
+h1{
+  font-family: 'Parisienne', cursive;
+  font-size: 4em;
+}
+h2, h3, h4{
+  font-family: 'Josefin Slab', serif;
+  font-size: 2em;
+}
+h3, h4{
+  margin-bottom: 1em;
+  border-bottom: 1px solid white;
+}
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  background-color: white;
+}
+span{
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+}
+main section:nth-child(2) article div div a{
+  text-decoration: none;
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  color: white;
+}
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° Mobile first °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/* Nav section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+nav{
+  background-color: rgba(255, 255, 255, 0.8);
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  height: 20vh;
+  width: 100%
+}
+nav aside{
+  width: 20%;
+}
 
+/* End Nav section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Header section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+header{
+  background-color: rosybrown;
+  margin-top: 20vh;
+}
+header ul li{
+  display: none;
+}
+/* End Header section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Main section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+main{
 
+}
+main section:nth-child(2) h3{
+  width: 100%;
+  background-color: white;
+  margin-top: 10%;
+}
+main section:nth-child(2) article div{
+  height: 10vh;
+  background-color: rosybrown;
+}
+main section:nth-child(2) article div div{
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1em;
+}
+/* End Main section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Footer section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer{
+  background-color: black;
+  height: 20vh;
+  justify-content: space-around;
+}
+footer i{
+  color: white;
+}
+footer p{
+  background-color: inherit;
+  border-bottom: 1px solid rosybrown;
+  margin-top: 1em;
+  color: white;
+}
+footer div:nth-child(3){
+  width: 90%;
+  justify-content: space-between;
+}
+/* End Footer section ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End Mobile first °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° tablette °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+@media only screen and (min-width: 600px) {
 
+/* Nav section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+#menu{
+  display: none;
+}
+#login{
+  margin-right: 5%;
+}
+#logo{
+  width: 90%;
+}
+nav{
+  justify-content: space-between;
+}
+nav aside:nth-child(2){
+  width: 100%;
+  justify-content: flex-end;
+}
 
+form{
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+form i{
+  color: rosybrown;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+/* End Nav section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Header section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+header{
+  background-image: url(../img/cookie.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+/* End Header section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Main section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+main section:nth-child(2){
+  height: auto;
+}
+main section:nth-child(2) div{
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+main section:nth-child(2) article{
+  width: 45%;
+  margin-bottom: 20%;
+}
+main section:nth-child(2) article p{
+  height: 55%;
+}
+main section:nth-child(2) article div{
+  width: auto;
+  justify-content: flex-end;
+}
+main section:nth-child(2) article div div{
+  width: 60%;
+  justify-content: space-between;
+}
+/* End Main section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Footer section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer{
+  width: 100%;
+}
 
+/* End Footer section tablette ~~~~~~~~~~~~~~~~~~~~~~~~*/
+}
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End tablette °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° Pc °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+@media only screen and (min-width: 1200px){
+  .none{
+    display: block;
+  }
+  #menu{
+    display: none;
+  }
+/* Header section PC ~~~~~~~~~~~~~~~~~~~~~~~~*/
+header ul {
+  width: 100%;
+  background-color: white;
+  height: 20%;
+}
 
+header ul li{
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+  header ul li a{
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* End Header section PC ~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Main section PC ~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
-
-
-
-
-
-
-
+main section:nth-child(1) div{
+  display: flex;
+  background-color: red;
+  width: 100%;
+  
+}
+/* End Main section PC ~~~~~~~~~~~~~~~~~~~~~~~~*/
+}
+/*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° End Pc °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
